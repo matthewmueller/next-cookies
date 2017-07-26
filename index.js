@@ -2,7 +2,6 @@
  * Module dependencies
  */
 
-const cookie = require('component-cookie')
 const parser = require('cookie')
 
 /**
@@ -24,6 +23,6 @@ function Cookies (ctx, options) {
     return parser.parse(cookies, options)
   } else {
     // browser
-    return cookie()
+    return require('component-cookie')();
   }
 }
