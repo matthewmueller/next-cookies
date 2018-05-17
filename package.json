@@ -3,6 +3,10 @@
   "version": "1.0.2",
   "description": "get the cookies on both the client & server",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/matthewmueller/next-cookies.git"
+  },
   "scripts": {
     "test": "make test"
   },
