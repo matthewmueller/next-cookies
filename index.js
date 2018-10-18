@@ -18,6 +18,7 @@ function Cookies (ctx, options) {
   options = options || {}
   if (ctx.req) {
     // server
+    if (!ctx.req.headers) return {} // for Static export feature of Next.js
     const cookies = ctx.req.headers.cookie
     if (!cookies) return {}
     return parser.parse(cookies, options)
