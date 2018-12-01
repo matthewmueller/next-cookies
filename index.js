@@ -16,7 +16,7 @@ module.exports = Cookies
 
 function Cookies (ctx, options) {
   options = options || {}
-  if (ctx.req) {
+  if (ctx && ctx.req) {
     // server
     if (!ctx.req.headers) return {} // for Static export feature of Next.js
     const cookies = ctx.req.headers.cookie
