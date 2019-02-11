@@ -3,6 +3,7 @@
   "version": "1.0.4",
   "description": "get the cookies on both the client & server",
   "main": "index.js",
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "git://github.com/matthewmueller/next-cookies.git"
