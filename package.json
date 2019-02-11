@@ -2,7 +2,8 @@
   "name": "next-cookies",
   "version": "1.0.4",
   "description": "get the cookies on both the client & server",
-  "main": "index.js",
+  "main": "next-cookies.node.js",
+  "browser": "next-cookies.browser.js",
   "types": "index.d.ts",
   "repository": {
     "type": "git",
@@ -23,8 +24,5 @@
   "dependencies": {
     "component-cookie": "1.1.3",
     "cookie": "^0.3.1"
-  },
-  "browser": {
-    "cookie": false
   }
 }
