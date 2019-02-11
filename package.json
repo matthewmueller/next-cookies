@@ -1,6 +1,6 @@
 {
   "name": "next-cookies",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "get the cookies on both the client & server",
   "main": "next-cookies.node.js",
   "browser": "next-cookies.browser.js",
