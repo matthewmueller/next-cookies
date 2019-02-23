@@ -1,19 +1,3 @@
-/**
- * Module dependencies
- */
+import all from 'component-cookie';
 
-const parser = require('component-cookie');
-
-/**
- * Export `Cookies`
- */
-
-module.exports = Cookies;
-
-/**
- * Cookies function
- */
-
-function Cookies () {
-  return parser();
-}
+export default () => all();
