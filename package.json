@@ -7,9 +7,15 @@
   "types": "index.d.ts",
   "repository": "matthewmueller/next-cookies",
   "scripts": {
+    "prepublish": "npm run prepare",
     "prepare": "microbundle --external none -f cjs --define @set=all,@get=all,@encode=encodeURIComponent,@decode=decodeURIComponent,@console=undefined --alias debug=$PWD/debug -o dist/next-cookies.browser.js next-cookies.browser.js",
     "test": "make test"
   },
+  "files": [
+    "next-cookies.node.js",
+    "dist/next-cookies.browser.js",
+    "index.d.ts"
+  ],
   "keywords": [
     "cookies",
     "next.js",
