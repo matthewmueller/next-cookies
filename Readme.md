@@ -43,23 +43,27 @@ The `ctx` object is passed to your [`getInitialProps`](https://nextjs.org/docs#f
 
 ### Set a cookie:
 
-This library does not support setting cookies. However, here's how to do it in client-side code:
+This library does not support setting cookies. However, this is how to do it in client-side code:
 
 ```js
 document.cookie = `foo=bar; path=/`;
 ```
 
-This sets a cookie named `foo` to the value `bar`. The `path` part is optional but usually what you wanted. You can also add an expiration date to make it go away at a specific time instead of wheever the browser is closed.
+This sets a cookie named `foo` to the value `bar`. 
+
+The `path` portion is optional but usually desired. 
+
+An expiration date may be appended (see below), otherwise the cookie will be deleted whenever the browser is closed.
 
 ### Delete a cookie:
 
-This library does not support deleting cookies. However, here's how to do it in client-side code:
+This library does not support deleting cookies. However, this is how to do it in client-side code:
 
 ```js
 document.cookie = `foo=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT`;
 ```
 
-The date must be in the past. The value doesn't matter, although the `path` does.
+The value doesn't matter, although the `path` does. The expiration date must be in the past. 
 
 ## Complete Example
 
