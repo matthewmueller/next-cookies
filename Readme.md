@@ -1,8 +1,8 @@
 # Next Cookies
 
-Tiny little function for getting cookies on both client & server with next.js.
+Tiny little function for getting cookies on both client & server with [next.js](https://nextjs.org).
 
-This allows you to set the cookie client-side, but perform server-side rendering of your components.
+This enables easy client-side and server-side rendering of pages that depend on cookies.
 
 ## Installation
 
@@ -43,23 +43,23 @@ The `ctx` object is passed to your [`getInitialProps`](https://nextjs.org/docs#f
 
 ### Set a cookie:
 
-This library does not support setting cookies. However, here's how you do it in client-side code:
+This library does not support setting cookies. However, here's how to do it in client-side code:
 
 ```js
 document.cookie = `foo=bar; path=/`;
 ```
 
-This sets a cookie named `foo` to the value `bar. The `path` part is optional but usually what you wanted. You can also add an expiration date to make it go away at a specific time instead of wheever the browser is closed.
+This sets a cookie named `foo` to the value `bar`. The `path` part is optional but usually what you wanted. You can also add an expiration date to make it go away at a specific time instead of wheever the browser is closed.
 
 ### Delete a cookie:
 
-This library does not support deleting cookies. However, here's how you do it in client-side code:
+This library does not support deleting cookies. However, here's how to do it in client-side code:
 
 ```js
 document.cookie = `foo=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT`;
 ```
 
-That's right, just set it to a date in the past. The value doesn't matter, although the `path` does.
+The date must be in the past. The value doesn't matter, although the `path` does.
 
 ## Complete Example
 
