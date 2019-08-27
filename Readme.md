@@ -27,7 +27,7 @@ const allCookies = cookies(ctx);
 
 `allCookies` will be an object with keys for each cookie.
 
-The `ctx` object is passed to your `getInitialProps` function by next.js.
+The `ctx` object is passed to your [`getInitialProps`](https://nextjs.org/docs#fetching-data-and-component-lifecycle) function by next.js.
 
 ### Read a single cookie:
 
@@ -38,6 +38,8 @@ or
 ```js
 const myCookie = cookies(ctx).myCookie;
 ```
+
+The `ctx` object is passed to your [`getInitialProps`](https://nextjs.org/docs#fetching-data-and-component-lifecycle) function by next.js.
 
 ### Set a cookie:
 
@@ -115,7 +117,8 @@ export default NameForm
 * https://www.npmjs.com/package/component-cookie
 * https://www.npmjs.com/package/cookie
 * https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
-* https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie 
+* https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie
+* https://tools.ietf.org/html/rfc6265
 
 
 ## License
