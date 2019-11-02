@@ -116,10 +116,11 @@ class NameForm extends React.Component {
 export default NameForm
 ```
 
+See, also, the test app: https://github.com/matthewmueller/next-cookies/blob/master/pages/cookies.js
+
 ## More Information
 
-* https://www.npmjs.com/package/component-cookie
-* https://www.npmjs.com/package/cookie
+* https://www.npmjs.com/package/universal-cookie
 * https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
 * https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie
 * https://tools.ietf.org/html/rfc6265
