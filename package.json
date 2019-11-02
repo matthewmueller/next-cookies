@@ -3,17 +3,14 @@
   "version": "1.1.3",
   "description": "get the cookies on both the client & server",
   "main": "next-cookies.node.js",
-  "browser": "dist/next-cookies.browser.js",
   "types": "index.d.ts",
   "repository": "matthewmueller/next-cookies",
   "scripts": {
-    "prepublish": "npm run prepare",
-    "prepare": "microbundle --external none -f cjs --define @set=all,@get=all,@encode=encodeURIComponent,@decode=decodeURIComponent,@console=undefined --alias debug=$PWD/debug -o dist/next-cookies.browser.js next-cookies.browser.js",
-    "test": "make test"
+    "test-server": "next dev",
+    "test": "node run_tests.js"
   },
   "files": [
-    "next-cookies.node.js",
-    "dist/next-cookies.browser.js",
+    "index.js",
     "index.d.ts"
   ],
   "keywords": [
@@ -26,10 +23,14 @@
   "author": "Matthew Mueller",
   "license": "MIT",
   "dependencies": {
-    "component-cookie": "1.1.3",
-    "cookie": "^0.3.1"
+    "universal-cookie": "^4.0.2"
   },
   "devDependencies": {
-    "microbundle": "^0.10.1"
+    "chromedriver": "^78.0.1",
+    "geckodriver": "^1.19.1",
+    "next": "9.1.2",
+    "nightwatch": "^1.2.4",
+    "react": "16.11.0",
+    "react-dom": "16.11.0"
   }
 }
