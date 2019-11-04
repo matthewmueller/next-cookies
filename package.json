@@ -34,11 +34,10 @@
     "universal-cookie": "^4.0.2"
   },
   "devDependencies": {
-    "chromedriver": "^78.0.1",
+    "chromedriver": "*",
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-prettier": "^3.1.1",
-    "geckodriver": "^1.19.1",
     "nightwatch": "^1.2.4",
     "prettier": "1.18.2",
     "react": "16.11.0",

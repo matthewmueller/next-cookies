@@ -116,7 +116,7 @@ class NameForm extends React.Component {
 export default NameForm
 ```
 
-See, also, the test app: https://github.com/matthewmueller/next-cookies/blob/master/pages/cookies.js
+See, also, the test app: https://github.com/matthewmueller/next-cookies/blob/master/tests/test-app/pages/cookies.js
 
 ## More Information
 
