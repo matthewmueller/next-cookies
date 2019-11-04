@@ -1,0 +1,18 @@
+{
+  "name": "test-app",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test-server": "next dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^9.1.2",
+    "next-cookies": "*"
+  }
+}

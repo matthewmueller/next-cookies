@@ -2,12 +2,12 @@
   "name": "next-cookies",
   "version": "2.0.0",
   "description": "get the cookies on both the client & server",
-  "main": "next-cookies.node.js",
+  "main": "index.js",
   "types": "index.d.ts",
   "repository": "matthewmueller/next-cookies",
   "scripts": {
-    "test-server": "next dev",
-    "test": "node run_tests.js"
+    "test-server": "cd tests/test-app && npm run test-server",
+    "test": "node tests/run_integration_tests.js"
   },
   "files": [
     "index.js",
@@ -28,7 +28,6 @@
   "devDependencies": {
     "chromedriver": "^78.0.1",
     "geckodriver": "^1.19.1",
-    "next": "9.1.2",
     "nightwatch": "^1.2.4",
     "react": "16.11.0",
     "react-dom": "16.11.0"

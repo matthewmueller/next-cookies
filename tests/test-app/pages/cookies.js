@@ -1,4 +1,4 @@
-import cookies from '../index';
+import cookies from 'next-cookies';
 
 const Cookies = ({cookies}) => <div>
     <h1>Cookies:</h1>
