@@ -7,7 +7,15 @@
   "repository": "matthewmueller/next-cookies",
   "scripts": {
     "test-server": "cd tests/test-app && npm run test-server",
-    "test": "node tests/run_integration_tests.js"
+    "lint": "eslint .",
+    "autofix": "eslint . --fix",
+    "test-integration": "node tests/run_integration_tests.js",
+    "test": "npm run lint && npm run test-integration"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   },
   "files": [
     "index.js",
@@ -27,8 +35,12 @@
   },
   "devDependencies": {
     "chromedriver": "^78.0.1",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-prettier": "^3.1.1",
     "geckodriver": "^1.19.1",
     "nightwatch": "^1.2.4",
+    "prettier": "1.18.2",
     "react": "16.11.0",
     "react-dom": "16.11.0"
   }

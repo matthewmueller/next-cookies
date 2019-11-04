@@ -1,0 +1,20 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# include it's config file
+!.eslintrc.js
+
+# dependencies
+/tests/test-app/node_modules/
+/node_modules
+/tests/test-app/.pnp
+
+# testing
+/coverage
+/tests_output
+
+# next.js
+/tests/test-app/.next/
+/tests/test-app/out/
+
+# production
+/tests/test-app/build
