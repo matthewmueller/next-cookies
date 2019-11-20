@@ -1,5 +1,7 @@
 # Next Cookies
 
+[![Build Status](https://travis-ci.org/matthewmueller/next-cookies.svg?branch=master)](https://travis-ci.org/matthewmueller/next-cookies)
+
 Tiny little function for getting cookies on both client & server with [next.js](https://nextjs.org).
 
 This enables easy client-side and server-side rendering of pages that depend on cookies.
