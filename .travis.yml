@@ -4,3 +4,12 @@ node_js:
 
 addons:
   chrome: stable
+
+deploy:
+  provider: npm
+  email: nathan@nfriedly.com
+  api_key:
+    secure: Q2G17DR9I1z4dROvPTxCLWZX/6iTA0tVf7hVI773m5gzSz0koCDAzXHc5Y53KwyJHb57z9g6ren3iRxWaZ+OKrilOs9CbmsRHHcjmKeq7sCg0znWhev81C5oU1tUropElnuEYoYDXVwqwkz2yC0bITGrlKbrpvARSTmIuAl1GuseBWgy0+fzQ108cLW/d4TgwBgRP8aaw4g6Rl80s5v3fCbrhF8iWPLVofIK/6ZOvma8LcQVBB7jd7JgprNwTgrydYFTivQ47zs9KTsfuxqN/gQjqkbLNlqd+srSrSVasBnzPc+4QJ5z/RLyjA5uMVt7nTcr1EvXFGwcS3+Uw3A2g70GfQKn7BObw/EWTJ2Q2ldAXWcxEjqEVDEeS6aIsqwI0vs3/MkaWLxS0u728BY2wN+O2HFaQfUv0/PY/fsOwvTIn9SA+3O2DzSiyJnmeZOokmeBWcv+6cTxtXi6d2DmGU+NxR5VRlMYe8LV63G9vMbj7fXPnlvt2cnC2M0VGWCJ2/x4vnCyHB9xSg2pNFGkIkoRAbCL+hvVUml1+CxnQAetI1R6l4XCi7oMYGMB9wAvtepj1jicY4Kn2zFCRhCQ9F3MgUXL+OljocpH06/wSZj9n9I2Zs6wg57md2QSzw5LlPOCrpeEBf8IYsR1EnpihNT4Z2xKL5DS16u1Lj3ORvg=
+  on:
+    tags: true
+    repo: matthewmueller/next-cookies
