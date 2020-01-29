@@ -51,5 +51,16 @@ module.exports = {
       .assert.containsText("li", "test_cookie")
       .assert.containsText("li", "test value")
       .end();
+  },
+
+  "Parses a JSON cookie by default": function(browser) {
+    browser
+      .url("http://localhost:3000/")
+      .setCookie({ name: "test_cookie", value: "%7B%22foo%22%3A%22asdf%22%7D" })
+      .url("http://localhost:3000/parsed-unparsed")
+      .waitForElementVisible("#unparsed")
+      .assert.containsText("#parsed", 'parsed: (object) { "foo": "asdf" }')
+      .assert.containsText("#unparsed", 'unparsed: (string) {"foo":"asdf"}')
+      .end();
   }
 };

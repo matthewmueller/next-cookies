@@ -6,7 +6,7 @@ const Cookies = ({ cookies }) => (
     <ul id="cookies">
       {Object.keys(cookies).map(name => (
         <li key={name}>
-          <b id={`cookie-${name}`}>{name}</b>: {cookies[name]}
+          <b id={`cookie-${name}`}>{name}</b>: {cookies[name].toString()}
         </li>
       ))}
     </ul>
