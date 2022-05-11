@@ -31,7 +31,7 @@ const allCookies = cookies(ctx);
 
 The `ctx` object is passed to your [`getInitialProps`](https://nextjs.org/docs#fetching-data-and-component-lifecycle) function by next.js.
 
-JSON is parsed automatically, to disable this behavior pass an options object with `doNotParse` set to `true:
+JSON is parsed automatically, to disable this behavior pass an options object with `doNotParse` set to `true`:
 
 ```js
 const allCookies = cookies(ctx, {doNotParse: true});
