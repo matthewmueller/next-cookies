@@ -6,14 +6,6 @@
 /tests/test-app/.pnp
 .pnp.js
 
-# this is to work around travis ci issues:
-# travis only allows you to request the current stable or beta versions of chrome, not a specific version
-# chromedriver versions are tied to specific chrome versions
-# we currently request chrome stable in .travis.yml and the latest stable chromedriver in package.json
-# however, if there is a package-lock.json it will specify a particular version of chromedriver and travis-ci will use that
-# this then leads to test failures later on when they get out of sync
-package-lock.json
-
 # testing
 /coverage
 /tests_output
