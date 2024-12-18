@@ -12,7 +12,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "next": "^14.2.10",
+    "next": "^14.2.15",
     "next-cookies": "*"
   }
 }
